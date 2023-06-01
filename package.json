@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf build && swc src -d dist",
+    "build": "rimraf dist && swc src -d dist",
     "start": "node dist/index",
-    "dev": "nodemon --watch src --exec 'ts-node --swc' src/index.ts",
+    "dev": "nodemon --watch src --exec 'swc src -d dist' dist/index.js",
     "format": "prettier --write src",
     "lint": "eslint src --fix"
   },
@@ -26,7 +26,6 @@
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
-    "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   }
 }
