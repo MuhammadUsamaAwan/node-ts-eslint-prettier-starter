@@ -1,0 +1,1 @@
+Node.js starter using typescript with SWC, eslint, prettier and other useful setup. The starter doesn't contain any frameworks like express or fastify, so you can use any you want starting with this.
